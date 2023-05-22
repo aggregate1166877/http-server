@@ -25,7 +25,7 @@ Example use:
 ```json
 {
   "scripts": {
-    "start": "http-server dirName --header Cross-Origin-Embedder-Policy:require-corp --header Cross-Origin-Opener-Policy: same-origin"
+    "start": "http-server dirName --header Cross-Origin-Embedder-Policy:require-corp --header Cross-Origin-Opener-Policy:same-origin"
   }
 }
 ```
