@@ -1,3 +1,32 @@
+# About this fork
+
+In May of 2016, an absolute legend going by the name `hedefalk` created
+[a PR](https://github.com/http-party/http-server/compare/master...hedefalk:http-server:master)
+for `http-server` that allows setting custom headers. This is crucial for
+projects that need things like `wasm` and `SharedArrayBuffer` support.
+
+Using `hedefalk`'s old version these days is problematic because, being old, it
+lacks other very important features people like me need, such as custom
+mimetype support for better `wasm` testing.
+
+7 years later (at time of writing) that PR is still sitting there, dusty,
+ignored, people desperately asking for it to be merged. But it's difficult now,
+because it has entered merge-conflict territory.
+
+So, I merged it. Use it in your `package.json` file as follows:
+```json
+"devDependencies": {
+  "http-server": "git+https://github.com:aggregate1166877/http-server.git#943e771ddd257874fc1fb64d4ca410b1cc3b312d"
+}
+```
+
+With a bit of luck the authors of `https-server` merge that PR in the next 7
+years or so.
+
+Original README follows below.
+
+<hr>
+
 [![GitHub Workflow Status (master)](https://img.shields.io/github/workflow/status/http-party/http-server/Node.js%20CI/master?style=flat-square)](https://github.com/http-party/http-server/actions)
 [![npm](https://img.shields.io/npm/v/http-server.svg?style=flat-square)](https://www.npmjs.com/package/http-server) [![homebrew](https://img.shields.io/homebrew/v/http-server?style=flat-square)](https://formulae.brew.sh/formula/http-server) [![npm downloads](https://img.shields.io/npm/dm/http-server?color=blue&label=npm%20downloads&style=flat-square)](https://www.npmjs.com/package/http-server)
 [![license](https://img.shields.io/github/license/http-party/http-server.svg?style=flat-square)](https://github.com/http-party/http-server)
