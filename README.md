@@ -7,7 +7,7 @@ projects that need things like `wasm` and `SharedArrayBuffer` support.
 
 Using `hedefalk`'s old version these days is problematic because, being old, it
 lacks other very important features people like me need, such as custom
-mimetype support for better `wasm` testing.
+mimetype support for better `wasm` support.
 
 7 years later (at time of writing) that PR is still sitting there, dusty,
 ignored, people desperately asking for it to be merged. But it's difficult now,
@@ -17,6 +17,16 @@ So, I merged it. Use it in your `package.json` file as follows:
 ```json
 "devDependencies": {
   "http-server": "git+https://github.com:aggregate1166877/http-server.git#943e771ddd257874fc1fb64d4ca410b1cc3b312d"
+}
+```
+
+Example use:
+
+```json
+{
+  "scripts": {
+    "start": "http-server dirName --header Cross-Origin-Embedder-Policy:require-corp --header Cross-Origin-Opener-Policy: same-origin"
+  }
 }
 ```
 
