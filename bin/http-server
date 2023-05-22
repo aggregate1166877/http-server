@@ -11,7 +11,7 @@ var chalk     = require('chalk'),
       .boolean('cors')
       .argv;
 
-    fs         = require('fs'),
+    var fs         = require('fs'),
     url        = require('url');
 var argv = require('minimist')(process.argv.slice(2), {
   alias: {
