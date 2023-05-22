@@ -20,6 +20,10 @@ So, I merged it. Use it in your `package.json` file as follows:
 }
 ```
 
+You should consider this repo unmaintained as I'm unlikely to merge future
+`https-server` changes into this repo (I guess we'll see), but it's a temporary
+solution for people who desperately need a fix right now.
+
 With a bit of luck the authors of `https-server` merge that PR in the next 7
 years or so.
 
